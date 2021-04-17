@@ -9,9 +9,9 @@
 .body-container{
   display:grid;
   margin: 10px 10px;
-  grid-template-areas: "Summary" "Skills" "Experience";
+  grid-template-areas: "Summary" "Skills" "Experience" "Education";
   grid-template-columns: 100fr;
-  grid-template-rows: 10fr 20fr 70fr;
+  grid-template-rows: 10fr 20fr 60fr 10fr;
 }
 .box-header{
   grid-area: header;
@@ -31,4 +31,7 @@
 }
 .box-experience{
   grid-area: Experience;
+}
+.box-education{
+  grid-area: Education;
 }
