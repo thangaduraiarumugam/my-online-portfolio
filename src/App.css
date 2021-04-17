@@ -1,38 +1,34 @@
-.App {
-  text-align: center;
+.main-container{
+  display: grid;
+  margin: 10px 10px;
+  grid-template-areas: "header header" "body body" "footer footer";
+  grid-template-columns: 100fr;
+  grid-template-rows: 10fr 80fr 10fr;
+  border:3px solid rgb(150, 113, 113);
+}
+.body-container{
+  display:grid;
+  margin: 10px 10px;
+  grid-template-areas: "Summary" "Skills" "Experience";
+  grid-template-columns: 100fr;
+  grid-template-rows: 10fr 20fr 70fr;
+}
+.box-header{
+  grid-area: header;
+}
+.box-body{
+  grid-area: body;
+}
+.box-footer{
+  grid-area:footer;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.box-summary{
+  grid-area: Summary;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.box-skills{
+  grid-area: Skills;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.box-experience{
+  grid-area: Experience;
 }
