@@ -1,9 +1,8 @@
-import {SkillList} from '../data/resume';
-
-const Skills = () => {
-    return ( <div className="box-skills">Computer Skills
+const Skills = (props) => {
+    return ( <div className="box-skills">
+        <div className="header-label" >Computer Skills</div>
     <ul>
-        {SkillList.map((skill)=>{
+        {props.skillList.map((skill)=>{
             return <li>{skill}</li>
         })}
         

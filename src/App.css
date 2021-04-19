@@ -1,17 +1,9 @@
-.main-container{
-  display: grid;
-  margin: 10px 10px;
-  grid-template-areas: "header header" "body body" "footer footer";
-  grid-template-columns: 100fr;
-  grid-template-rows: 10fr 80fr 10fr;
-  border:3px solid rgb(150, 113, 113);
-}
 .body-container{
   display:grid;
   margin: 10px 10px;
-  grid-template-areas: "Summary" "Skills" "Experience" "Education";
+  grid-template-areas: "Summary" "Skills" "Experience" "Education" "ContactUs";
   grid-template-columns: 100fr;
-  grid-template-rows: 10fr 20fr 60fr 10fr;
+  grid-template-rows: auto auto auto auto auto;
 }
 .box-header{
   grid-area: header;
@@ -19,8 +11,8 @@
 .box-body{
   grid-area: body;
 }
-.box-footer{
-  grid-area:footer;
+.box-contactus{
+  grid-area:ContactUs;
 }
 
 .box-summary{
@@ -34,4 +26,8 @@
 }
 .box-education{
   grid-area: Education;
+}
+.header-label{
+  font-size: medium;
+  font-weight: bold;
 }

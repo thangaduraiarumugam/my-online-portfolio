@@ -1,10 +1,9 @@
 import Client from './Client';
-import {ClientList} from '../data/resume';
-
-const Experience = () => {
-  return <div className="box-experience">Experience
+const Experience = (props) => {
+  return <div className="box-experience">
+    <div className="header-label" >Experience</div>
     {
-        ClientList.map((data)=>{
+        props.clientList.map((data)=>{
             return <Client clientData={data}/>
         })
     }

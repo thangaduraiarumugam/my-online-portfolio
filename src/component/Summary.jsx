@@ -1,7 +1,7 @@
-import {SummaryData} from '../data/resume'
-const Summary = () => {
-    return ( <div className="box-summary">Summary
-    <div>{SummaryData}</div></div> );
+const Summary = (props) => {
+    return ( <div className="box-summary">
+        <div className="header-label" >Summary</div>
+    <div>{props.summaryData}</div></div> );
 }
  
 export default Summary;
